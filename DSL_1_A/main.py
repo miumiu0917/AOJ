@@ -24,6 +24,7 @@ class DisjointSet:
             if self.rank[x] == self.rank[y]:
                 self.rank[y] += 1
 
+
 def main():
     n, q = map(int, input().split(' '))
 
@@ -31,7 +32,7 @@ def main():
 
     for _ in range(q):
         c, a, b = map(int, input().split(' '))
-        
+
         if c == 0:
             ds.unite(a, b)
         else:
